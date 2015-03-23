@@ -1,0 +1,19 @@
+== README
+
+Mike's Rails + React boilerplate
+
+Notes:
+
+For webpack/rails interaction, see https://github.com/knomedia/webpack_assets
+^ that is important: `bin/rake assets:webpack:watch` is the important command out of that
+
+React is 0.12 right now, but newer versions are out - think about changing
+package.json to get the new ones. (also React Router could use an upgrade)
+
+things to do before 'rails s':
+ - bundle install
+ - npm insall
+ - have postgres (or change databse.yml)
+ - grep for YOUR_APP_NAME and replace it with... your app's name
+
+for hosting any heroku buildpacks need to support both node & rails

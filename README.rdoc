@@ -2,7 +2,18 @@
 
 Mike's Rails + React boilerplate
 
+what this has:
+ - rails 4
+ - react 0.12
+ - react router 0.12
+ - bootstap
+ - webpack with some loaders (see webpack.config)
+ - a few nice node packages and gems (gemfile and package.json)
+ - postgres compatability (no SQLite or Mysql tho)
+
 Notes:
+
+all client-side stuff should be done in client_app. main.js loads the react application in application.jsx and bootstrap + application.scss
 
 For webpack/rails interaction, see https://github.com/knomedia/webpack_assets
 

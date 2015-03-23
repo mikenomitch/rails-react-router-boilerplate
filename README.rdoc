@@ -5,6 +5,7 @@ Mike's Rails + React boilerplate
 Notes:
 
 For webpack/rails interaction, see https://github.com/knomedia/webpack_assets
+
 ^ that is important: `rake assets:webpack:watch` is the important command out of that
 
 React is 0.12 right now, but newer versions are out - think about changing
@@ -19,4 +20,4 @@ things to do before 'rails s':
  - run `bin/rake assets:webpack:watch` -> (compile JSX & SCSS & other stuff and put it into the asset pipeline)
  - run `rails s` and go to localhost:3000 -> (start a server)
 
-for hosting any heroku buildpacks need to support both node & rails
+fyi for hosting: any heroku buildpacks need to support both node & rails

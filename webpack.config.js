@@ -4,7 +4,7 @@ var path = require('path');
 module.exports = {
   entry: "./client_app/main.js",
   output: {
-    publicPath: 'http://YOUR_APP_NAMEapp.com/',
+    publicPath: 'http://crayjs.herokuapp.com/',
     filename: "./app/assets/javascripts/bundle.js"
   },
   module: {
@@ -12,7 +12,7 @@ module.exports = {
       { test: /\.coffee$/, loader: "coffee-loader" },
       { test: /\.(coffee\.md|litcoffee)$/, loader: "coffee-loader?literate" },
       { test: /\.jsx$/, loader: 'jsx-loader'},
-      { test: /\.cjsx$/, loader: "coffee-jsx-loader" },
+      { test: /\.cray$/, loader: 'sweetjs-loader?modules[]=./macros.sjs,readers[]=jsx-reader'},
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
       {

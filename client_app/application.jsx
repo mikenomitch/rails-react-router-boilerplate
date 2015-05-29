@@ -9,9 +9,9 @@ var RouteHandler = Router.RouteHandler
 
 // My Components
 var Navbar = require('./components/navbar.jsx')
-var Returns = require('./components/returns.cray')
 var Bar  = require('./components/bar.jsx')
 var Baz  = require('./components/baz.jsx')
+var Returns = require('./components/returns.cray')
 
 var App = React.createClass({
   render: function(){

@@ -1,0 +1,29 @@
+var _ = require('lodash')
+var React = require('react')
+
+var Returns = React.createClass({
+
+  INTS: [1,2,3,4,5],
+
+  sum: function(){
+
+    return _.reduce(
+      this.INTS,
+      function(memo, i){
+        memo + i
+      },
+      0
+    )
+
+  },
+
+  render: function(){
+    return(
+      <h3>
+        This is the sum: {this.sum()}
+      </h3>
+    )
+  }
+})
+
+module.exports = Returns

@@ -1,4 +1,4 @@
-var React = require('react')
+var React = require('react');
 
 var Bar = React.createClass({
   render: function(){
@@ -10,4 +10,4 @@ var Bar = React.createClass({
   }
 })
 
-module.exports = Bar
+module.exports = Bar;

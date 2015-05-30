@@ -5,14 +5,15 @@ module.exports = {
   entry: "./client_app/main.js",
   output: {
     publicPath: 'http://crayjs.herokuapp.com/',
-    filename: "./app/assets/javascripts/bundle.js"
+    filename: "./app/assets/javascripts/bundle.js",
+    libraryTarget: "umd"
   },
+  debug: true,
+  devtool: "source-map",
   module: {
     loaders: [
-      { test: /\.coffee$/, loader: "coffee-loader" },
-      { test: /\.(coffee\.md|litcoffee)$/, loader: "coffee-loader?literate" },
       { test: /\.jsx$/, loader: 'jsx-loader'},
-      { test: /\.cray$/, loader: 'sweetjs-loader?modules[]=./macros.cray,readers[]=jsx-reader'},
+      { test: /\.cray$/, loader: 'sweetjs?modules[]=./macros.cray,readers[]=jsx-reader'},
       { test: /\.css$/, loader: 'style-loader!css-loader' },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},
       {
